@@ -1,23 +1,75 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: normal;
+}
+
+.img-reponsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 * {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: normal; }
-.row {
-  display: flex;
- }
-.img-reponsive {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  .top {
+    padding: 20px;
+  }
+  .title {
+    width: 100%;
+    text-align: right;
+  }
+  .bigimage {
+    margin: 0px;
+    overflow: hidden;
+  }
+  .featuredwork {
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .work {
+     margin-left: 20px;
+    margin-right: 20px;
+  }
+  h1 {
+    font-size: 53px;
+  }
+  h2 {
+    font-size: 30px;
+    color: #008080;
+  }
+  h3 {
+    font-size: 20px;
+    color: #008080;
+    text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+  h4 {
+    font-size: 32px;
+    color: #2f4f4f
+  }
+  a href {
+    font-size: 16px;
+    color: #2f4f4f
+  }
+  .img-reponsive {
     max-width: 100%;
     height: auto;
     display: block;
-}
-* {
-  -webkit-box-sizing:  border-box;
-  -moz-box-sizing:    border-box;
-  -ms-box-sizing:    border-box;
-  box-sizing:    border-box;
+    margin: 0 auto;
+  }
 }
 
 .row {
+  display: flex;
   width: 100%;
 }
 
@@ -68,37 +120,54 @@
 .col-12 {
   width: 100%;
 }
-.top{
-  padding: 39px;  
+.top {
+  padding: 20px;
+
 }
-.title{
-    text-align: right; margin: 10px; padding-top: 45px;
+
+.title {
+ width: 100%;
+text-align: right;
 }
-.bigimage{
-    margin:0px; padding-left:170px;
+
+.bigimage {
+  margin: 0px;
+  overflow: hidden;
+  padding: center;
 }
-.featuredwork{
-    padding:0px; margin:0px;
+
+.featuredwork {
+  padding: 0 auto;
+  margin: 0 auto;
 }
-.work{
-    margin:15px;
+
+.work {
+  margin: 0 auto;
+  margin-right: 10px;
+  margin-left: 10px;
 }
+
 h1 {
-    
   font-size: 64px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 35px;
   color: #008080;
 }
+h3{
+   font-size:23px;
+  color: #008080;
+  	margin-left: 10px;
+	margin-right: 10px;
+}
 
-h4{
+h4 {
   font-size: 32px;
   color: #2f4f4f
 }
 
-a href{ 
+a href {
   font-size: 16px;
-  color:#2f4f4f
+  color: #2f4f4f
 }
