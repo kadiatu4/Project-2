@@ -1,13 +1,17 @@
 body {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: normal;
+  font-family: "Libre Baskerville", serif;
 }
 
 .img-reponsive {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.logo {
+  width: 50%;
+  height: 50%;
 }
 
 * {
@@ -16,55 +20,75 @@ body {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.navcolor {
+  font: 20px 'Open Sans Condensed', sans-serif;
+}
+
 /* Landscape phones and down */
 
 @media (max-width: 480px) {
+
   .top {
     padding: 20px;
   }
+
   .title {
     width: 100%;
     text-align: right;
   }
+
   .bigimage {
-    margin: 0px;
     overflow: hidden;
+    display: block;
   }
+
   .featuredwork {
-    padding: 0 auto;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
   }
-  .work {
-     margin-left: 20px;
-    margin-right: 20px;
-  }
+
   h1 {
     font-size: 53px;
   }
+
   h2 {
     font-size: 30px;
     color: #008080;
   }
+
   h3 {
     font-size: 20px;
     color: #008080;
     text-align: center;
-	margin-left: 10px;
-	margin-right: 10px;
   }
+
   h4 {
     font-size: 32px;
-    color: #2f4f4f
+    color: #2f4f4f;
   }
-  a href {
+
+  a {
     font-size: 16px;
-    color: #2f4f4f
+    color: #2f4f4f;
   }
+
+  p {
+    font-size: 16px;
+    color: #2f4f4f;
+  }
+
+  .col-sm-6,
+  .col-md-4 {
+    padding: 0;
+    margin: 0;
+  }
+
   .img-reponsive {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
@@ -120,31 +144,30 @@ body {
 .col-12 {
   width: 100%;
 }
+
 .top {
   padding: 20px;
-
+  margin: 30px 0;
 }
 
 .title {
- width: 100%;
-text-align: right;
+  width: 100%;
+  text-align: right;
 }
 
 .bigimage {
-  margin: 0px;
+  margin: 0;
   overflow: hidden;
-  padding: center;
+  width: 100%;
 }
 
 .featuredwork {
-  padding: 0 auto;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
 }
 
 .work {
-  margin: 0 auto;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0;
 }
 
 h1 {
@@ -155,11 +178,11 @@ h2 {
   font-size: 35px;
   color: #008080;
 }
-h3{
-   font-size:23px;
+
+h3 {
+  font-size: 23px;
   color: #008080;
-  	margin-left: 10px;
-	margin-right: 10px;
+  margin: 0 10px;
 }
 
 h4 {
@@ -167,7 +190,17 @@ h4 {
   color: #2f4f4f
 }
 
-a href {
+a {
+  font-size: 12px;
+  color: #2f4f4f
+}
+
+p {
   font-size: 16px;
   color: #2f4f4f
+}
+
+.thumbnail {
+  margin: 0;
+  padding: 0;
 }

@@ -2,70 +2,104 @@
 <html lang="en">
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap-responsive.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="Portfolio.css">
-  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet'>
+  <link href="http://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <title>My Portfolio</title>
 </head>
 
 <body>
 
-  <div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="nav navbar-default navbar-fixed-top " id="navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!--  Navbar Header -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#" class="navcolor">Home</a></li>
+                <li><a href="#" class="navcolor">My Work</a></li>
+                <li><a href="#" class="navcolor">About</a></li>
+                <li><a href="#" class="navcolor">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
 
     <div class="row top">
-      <div class="col-6">
-        <img src="Kdesigns.jpg" class="img-reponsive" alt="logo">
+      <div class=".col-xs-8 .col-md-6">
+        <img src="Kdesigns.jpg" class="img-reponsive logo" alt="logo">
       </div>
 
       <div class="title">
-        <div class="col-12">
+        <div class=".col-xs-12 .col-md-8">
           <h1>Kadi Diallo</h1>
           <h2>Front-End Developer</h2>
         </div>
       </div>
     </div>
-    <hr>
-    <div class="row bigimage">
 
-      <div class="col-12">
-        <center>
-          <img src="giphy.gif" alt="big image">
-        </center>
+    <hr>
+
+    <div class="row bigimage">
+      <div class=".col-xs-12 .col-sm-6 .col-md-8">
+        <img src="bigimage.jpg" class="img-reponsive" alt="big image">
       </div>
     </div>
 
     <div class="row featuredwork">
-
-      <div class="col-6">
+      <div class="col-md-12">
         <h4>Featured Work</h4>
       </div>
     </div>
 
     <div class="row work">
 
-      <div class="col-4">
-        <img src="favapp.jpg" class="img-reponsive" alt="App">
-        <h3>My Favorite app</h3>
-        <a href="https://github.com/kadiatu4/intro-project-html5-hello-world.">Project 1</a>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="favapp.jpg" class="img-reponsive" alt="App">
+          <div class="caption">
+            <h3>My Favorite app</h3>
+            <p>Udacity's Hello World Project</p>
+            <a href="https://github.com/kadiatu4/intro-project-html5-hello-world.">Project 1</a>
+          </div>
+        </div>
       </div>
 
-      <div class="col-4">
-        <img src="resume.jpg" class="img-reponsive" alt="resume">
-        <h3>Online Resume</h3>
-        <a href="">Link to project</a>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="resume.jpg" class="img-reponsive" alt="resume">
+          <div class="caption">
+            <h3>Online Resume</h3>
+            <p>My Professional Resume</p>
+            <a href="">Link to project</a>
+          </div>
+        </div>
       </div>
 
-      <div class="col-4">
-        <img src="arcade.jpg" class="img-reponsive" alt="arcade">
-        <h3>Classic Arcade Game Clone</h3>
-        <a href="">Link to project</a>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="arcade.jpg" class="img-reponsive" alt="arcade">
+          <div class="caption">
+            <h3>Classic Arcade Game Clone</h3>
+            <p>The First Game I have ever built</p>
+            <a href="">Link to project</a>
+          </div>
+        </div>
       </div>
 
     </div>
-  </div>
 
+  </div>
 </body>
